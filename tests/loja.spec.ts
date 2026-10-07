@@ -20,7 +20,7 @@ async function adicionarProdutoEAbrirCarrinho(page: Page) {
 async function preencherDadosDoCliente(page: Page) {
     await page.getByPlaceholder('First Name').fill('Burro');
     await page.getByPlaceholder('Last Name').fill('do Sherek');
-    await page.getByPlaceholder('Zip/Postal Code').fill('50000000');
+    await page.getByPlaceholder('Zip/Postal Code').fill('98765432');
     await page.getByRole('button', { name: 'Continue' }).click();
 }
 
